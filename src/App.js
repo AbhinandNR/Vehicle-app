@@ -1,24 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Addvechile from './components/Addvechile';
+import VechSearch from './components/VechSearch';
+import Vechdelete from './components/Vechdelete';
+import ViewVehicle from './components/ViewVehcile';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    <BrowserRouter>
+    <Routes>
+      <Route path="/"element={<Addvechile/>}/>
+      <Route path="/Search"element={<VechSearch/>}/>
+      <Route path="/Delete"element={<Vechdelete/>}/>
+      <Route path="/Add"element={<Addvechile/>}/>
+      <Route path="/View"element={<ViewVehicle/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
