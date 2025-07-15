@@ -29,9 +29,7 @@ const Nav = () => {
                             <li class="nav-item">
                                 <Link  class="nav-link" to="/Delete">Delete</Link>
                             </li>
-                            <li class="nav-item">
-                                <Link  class="nav-link disabled" aria-disabled="true">Disabled</Link>
-                            </li>
+                           
                         </ul>
                     </div> 
                 </div>
